@@ -1,0 +1,23 @@
+{
+  "name": "leekswanv2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx browser-sync start -sw"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeekSwan/LeekSwanV2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LeekSwan/LeekSwanV2/issues"
+  },
+  "homepage": "https://github.com/LeekSwan/LeekSwanV2#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.13"
+  }
+}
