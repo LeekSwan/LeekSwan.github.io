@@ -1,0 +1,25 @@
+const experienceData = [{
+    id: 1,
+    title: "Network Engineer Intern",
+    date: "Jul 2019 - Oct 2019",
+    color: "#931815",
+    backgroundColor: "#f39c11",
+    description: "Set up and configured routers and switches. Installed, operated, and troubleshooted small enterprise branch networks.",
+    link: "",
+}, {
+    id: 2,
+    title: "Python Developer Research Assistant",
+    date: "Aug 2018 - May 2019",
+    color: "#931815",
+    backgroundColor: "#f39c11",
+    description: "Developed methods to process fMRI data using Python and data processing libraries such as Scikit-learn, Pandas, and  NumPy)",
+    link: "",
+}, {
+    id: 3,
+    title: "Compliance Auditor",
+    date: "June 2017 - August 2017",
+    color: "#931815",
+    backgroundColor: "#f39c11",
+    description: "Completed audit reports by examining and analyzing records.  ",
+    link: "",
+}];

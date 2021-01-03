@@ -3,21 +3,193 @@
 
 <head>
     <meta charset="UFT-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true"> ;
+    <meta name="HandheldFriendly" content="true">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> 
    
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+
+    <link rel="stylesheet" href="CSS/index.css"/>
+    <link rel="stylesheet" href="CSS/navbar.css"/>
+    <link rel="stylesheet" href="CSS/slider.css"/>
+    <link rel="stylesheet" href="CSS/animations.css"/>
+
     <title>Lixuan Xia Portfolio</title>
-    <meta name="description" content="Lixuan Xia is an aspiring software engineer passionate of all things software. 
+    <meta name="description" content="Lixuan Xia is a full stack software developer passionate of all things software. 
     Recently graduated from UNC Chapel Hill, Lixuan has worked on many projects. "/>
 
 </head>
 
 
 <body>
+  <!-- <nav class="navbar navbar-expand-md sticky-top">
+      <div class="container">
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <div class="collapse navbar-collapse" id="narbarResponsive">
+              <ul class="navbar-nav nav-list ml-auto">
+                  <li><a href="#About" class="nav-link">About Me</a></li>
+                  <li><a href="#Experience" class="nav-link">Experience</a></li>
+                  <li><a href="#Projects" class="nav-link">Projects</a></li>
+                  <li><a href="#contact" class="nav-link">Contact Me!</a></li>
+        
+                  <li><a href="Assets/Lixuan_Xia_Resume_Tech.pdf" download="Lixuan_Xia_Resume" class="nav-link" style="color:#FC6230;">Resume</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav> -->
 
 
+  <div class="container-fluid header-container">
+    <div>
+      <h1 class = "title" >Hello! I'm Lixuan Xia.</h1>
+      <h5 class = "subtitle">A full stack developer passionate of all things software. </h5>
+    </div>
+  </div>
 
+
+  <div class="container-fluid about-container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%;">
+        <h class = "heading-font"> About me </h>
+      </div>
+      <div class="row">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 ">
+        <p class="paragraphs">I'm a recent graduate from UNC Chapel Hill with a Bachelors in Physics and Astronomy, along with
+            minors in Business and Computer Science.
+        </p>
+        </div>
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+          <p class="paragraphs">I'm a recent graduate from UNC Chapel Hill with a Bachelors in Physics and Astronomy, along with
+            minors in Business and Computer Science.
+          </p>
+          <p class="paragraphs">I enjoy working on all sorts of projects from websites to applications and everything in between.
+            My goal is to explore every tech stack under the sun and one day become a full stack developer.
+          </p>
+
+          <p class="paragraphs">
+              Listed bellow are a few technologies i've been working with recently:
+          </p>
+
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#languages">Languages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#frameworks">Libraries/Frameworks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#database">Database</a>
+            </li>
+          </ul>
+        
+          <!-- Tab panes -->
+          <div class="tab-content" style="padding-top: 0%;">
+            <div id="languages" class="tab-pane active"><br>
+              <ul class="">
+                <li>Java</li>
+                <li>Javascript ES6+</li>
+                <li>HTML/CSS</li>
+                <li>Python</li>
+              </ul>
+            </div>
+            <div id="frameworks" class="tab-pane fade"><br>
+              <ul class="list-horizontal card-font">
+                <li>React.Js</li>
+                <li>Node.js</li>
+                <li>Angular</li>
+                <li>Spring</li>
+              </ul>
+            </div>
+            <div id="database" class="tab-pane fade"><br>
+              <ul class="list-horizontal card-font">
+                <li>PostgreSQL</li>
+                <li>Oracle SQL</li>
+                <li>MariaDB</li>
+              </ul>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+     
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%;">
+        <h class = "heading-font"> Projects</h>
+      </div>
+    </div>
+
+    <div id="projects"><br>
+      <!-- Project card start -->
+      <div id="project-slider"></div>
+    </div> 
+
+  </div>      
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%;">
+        <h class = "heading-font"> Experience </h>
+      </div>
+    </div>
+
+    <div id="experience"><br>
+      <!-- Experience card start -->
+      <div id="experience-slider"></div>
+    </div>
+
+  </div>
+
+  <div class = "footer-container" id="contact" style="text-align: center;"> 
+    <h class = "heading-font">Get in touch!</h>
+
+    <div class="flex-center" style="margin-top: 5%;">
+        <a href="https://github.com/LeekSwan" target="_icon1" class="icon1 text-shadow-drop-center" title="Take a look at my projects!">
+            <i class="fab fa-github fa-4x fa-fw;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/lixuanxia/" target="_icon2" class="icon2 text-shadow-drop-center" title="Find me on linkedin!">
+            <i class="fab fa-linkedin fa-4x fa-fw"></i>
+        </a>
+        <a href="mailto:lilx@unc.edu" target="_icon3" class="icon3 text-shadow-drop-center" title="Shoot me an email!">
+            <i class="fas fa-envelope fa-4x fa-fw"></i>
+        </a>
+        </div>
+    <h6 class = "designed">Designed and built by Lixuan Xia</h6>
+  </div>
+
+  <a class="back2Top" id="back2Top"  href="#">
+      <i class="fa fa-2x fa-angle-double-up" aria-hidden="true"></i>
+  </a>
+  
+ 
+
+</div>
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js'></script>
+  <script src="JS/projectSlider.js" type="module"></script>
+  <script src="JS/experienceSlider.js" type="module"></script>
+  <script src="JS/links.js" type="module"></script>
+  <script src="JS/scrollToTop.js" type="module"></script>
+  <script src="Assets/projectData.js"></script>
+  <script src="Assets/experienceData.js"></script>
+
+
+       
 </body>
 
 </html>
