@@ -1,36 +1,98 @@
-*{ border: 1px solid red; }
+/* *{ border: 1px solid red; } */
 
 html, body {
   height: 100%;
+  font-family: 'Roboto Slab';
+  background-color: #151528;
 }
 
+colors {
+  /* Primary Colors (buttons, headlines, icons) */
+  color: #FC6230;
+  color: #3D9EC8;
+  color: #8ac4dd;
+  color: #29648A;
+  color: #232343;
+  /* Secondary Colors (secondaries, headings, subheadings, supporting content) */
+  color: #E7E7E7;
+  color: #9F9F9F;
+  /* Neutral Colors (Backgrounds and text)*/
+  background-color: #151528;
+
+}
 
 /* Content styling */
 .title {
-  font-size: 5vmax;
+  font-size: 4.5vmax;
   color: #E7E7E7;
 }
 
 .subtitle {
-  font-size: 4vmax;
-  line-height: 6vmax;
+  font-size: 3.5vmax;
+  line-height: 5vmax;
   color: #9F9F9F;
 }
 
 .heading-font {
-  font-size: 3vmax;
-  text-align: center;
+  font-size: 2.5vmax;
   color: #E7E7E7;
 }
 
 .paragraphs {
-  font-size: 2vmax;
+  font-size: 1.5vmax;
   color: #E7E7E7;
 }
 
-.card-font {
-  font-size: 1vmax;
-  color: #ca6060;
+.profile-pic {
+  border-radius: 50%;
+  width:300px;
+  height:300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img-top {
+  width:600px;
+  height:250px;
+}
+
+.designed {
+  position: relative;
+  margin-top: 4%;
+  font-size: 10px;
+  color: #9F9F9F;
+}
+.fa-4x {
+  color: #FC6230;
+}
+
+.fa-2x {
+  color:#FC6230;
+}
+
+.back2Top {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #fc633098; /* Set a background color */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.back2Top:hover {
+  transition: 0.3s;
+  background-color: #ff8138;
+}
+.designed {
+  position: relative;
+  margin-top: 4%;
+  font-size: 10px;
+  color: #9F9F9F;
 }
 
 /* Container styling */
@@ -78,3 +140,6 @@ html, body {
   width: 80%;
 }
 
+.footer-container {
+  background-color: #232343;
+}

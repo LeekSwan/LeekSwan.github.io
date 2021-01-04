@@ -1,11 +1,12 @@
 export const renderCard = function(experience) {
   return `
-      <div class="card">
+      <div class="card bg-transparent">
         <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">${experience.id}</h4>
-            <p class="card-text">${experience.title}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          <div class="card-body card-color">
+            <h4 class="card-title paragraphs">${experience.title}</h4>
+            <p class="card-text card-font">${experience.company}</p>
+            <p class="card-text"><small class="text-muted">${experience.date}</small></p>
+            <p class="card-text card-font">${experience.description}</p>
           </div>
       </div>
          `    
@@ -33,46 +34,51 @@ $(function() {
   loadExperiencesIntoDOM(experienceData);
 // Slider settings 
 $('.experience-card-slider').slick({
-  dots: false,
-  infinite: true,
-  arrows: true,
-  autoplay: false,
-  speed: 500,
-  draggable: true,
-  slidesToShow: 3,
-  slidesToScroll: 3,
-  responsive: [
-    {
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        dots: false,
-        draggable: true,
-        arrows: false
+  dots: true,
+    infinite: false,
+    arrows: true,
+    autoplay: false,
+    speed: 500,
+    draggable: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true,
+          draggable: true,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true,
+          draggable: true,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: true,
+          draggable: true,
+          arrows: true
+        }
       }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        draggable: true,
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 576,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        draggable: true,
-        arrows: false
-      }
-    }
-  ]
-});
+    ]
+  });
+  
 });
 
 

@@ -1,37 +1,85 @@
 .slick-slide {
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  .slick-prev, .slick-next {
-    background: #222222;
-  }
-  .slick-prev:hover, .slick-next:hover {
-    background: #222222;
-  }
-  .slick-prev:before, .slick-next:before {
-    font-size: 1rem;
-    color:#fff;
-    line-height: inherit;
-    font-weight: bold;
-    font-family: 'Font Awesome 5 Free', sans-serif;
-  }
-  .slick-prev {
-    left: -70px;
-  }
-  .slick-next {
-    right: -70px;
-  }
-  .slick-prev:before {
-    content: '\f053';
-  }
-  .slick-next:before {
-    content: '\f054';
-  }
+  margin-left: 15px;
+  margin-right: 15px;
+}
 
-  .card-font {
-    font-size: 15px;
-    color: #E7E7E7;
-  }
-  .card-color {
-    background-color: #232343;
-  }
+.slick-arrow {
+  top: 50%;
+  height: 26px;
+  width: 14px;
+  margin-top: -13px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url(https://tarkikromanski.github.io/files/arrow-slider.png);
+  background-repeat: no-repeat;
+}
+.slick-disabled {
+  opacity: 50%;
+  pointer-events:none;
+}
+.slick-prev {
+  left: -50px;
+  transform: rotate(180deg);
+}
+.slick-next {
+  right: -50px;
+}
+.slick-prev:before {
+  content: '\f053';
+  color: #e65a5a !important;
+}
+.slick-next:before {
+  content: '\f054';
+  color: #e65a5a !important;
+}
+
+/* slick dots */
+.slick-dots {
+  position: absolute;
+  bottom: -45px;
+  display: block;
+  width: 100%;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  display: none;
+}
+.slick-dots li:before {
+  top: 1px;
+  transition: all 0.5s;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #ffffff;
+  position: absolute;
+}
+.slick-dots li.slick-active:before {
+  top: 0;
+  width: 8px;
+  height: 8px;
+  margin-left: -2px;
+  background-color: #964848;
+}
+
+.card-font {
+  font-size: 15px;
+  color: #E7E7E7;
+}
+.card-color {
+  background-color: #232343;
+}

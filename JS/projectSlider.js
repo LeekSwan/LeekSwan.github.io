@@ -1,26 +1,32 @@
 export const renderCard = function(project) {
   return `
-      <div class="card">
-        <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
-          <div class="card-body">
-            <h4 class="card-title">${project.id}</h4>
-            <p class="card-text">${project.title}</p>
-            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+          <div class="card bg-transparent">
+            <img class="card-img-top" src="${project.image}" alt="Card image cap" style="width: 100%;">
+              <div class="card-body card-color">
+                  <h5 class="card-title paragraphs">${project.title}</h5>
+                  <p class="card-text card-font">${project.description}</p>
+                  <p class="card-text" style = "color:#9F9F9F; font-size:12px;">${project.tech}</p>
+                  <a href="${project.link}" target="proj${project.id}" class="proj${project.id} btn btn-outline-light">Github</a>
+              </div>
           </div>
-      </div>
-         `    
+
+         `
 };
 
 export const loadProjectsIntoDOM = function(project) {
   // Generate the cards using renderCard()
-  let cards1 = $('<div class="project-card-slider slider-container"></div>');
+  let cards = $('<div class="slider-container" id="project-card-slider">');
+  // let cards = $('<div class="card-deck">')
   for (let i = 0; i < project.length; i++) {
-  cards1.append(renderCard(project[i]));
+  cards.append(renderCard(project[i]));
   }
 
-  //Append to element
-  $("#project-slider").append(cards1)
+  // cards.wrapAll("<div class='slider-container' id='project-card-slider' />")
 
+  //Append to element
+  $("#project-slider").append(cards)
+  
 };
 
 
@@ -29,12 +35,12 @@ export const loadProjectsIntoDOM = function(project) {
 * Use jQuery to execute the function after the page loads
 */
 $(function() {
-  loadProjectsIntoDOM(projectData);
-
-  // Slider settings 
-  $('.project-card-slider').slick({
-    dots: false,
-    infinite: true,
+  loadProjectsIntoDOM(projectData)
+  
+  // Slider settings
+  $('#project-card-slider').slick({
+    dots: true,
+    infinite: false,
     arrows: true,
     autoplay: false,
     speed: 500,
@@ -47,10 +53,10 @@ $(function() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
-          infinite: true,
-          dots: false,
+          infinite: false,
+          dots: true,
           draggable: true,
-          arrows: false
+          arrows: true
         }
       },
       {
@@ -58,8 +64,10 @@ $(function() {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
+          infinite: false,
+          dots: true,
           draggable: true,
-          arrows: false
+          arrows: true
         }
       },
       {
@@ -67,8 +75,10 @@ $(function() {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          infinite: false,
+          dots: true,
           draggable: true,
-          arrows: false
+          arrows: true
         }
       }
     ]
