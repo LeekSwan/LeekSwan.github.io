@@ -3,6 +3,11 @@
   margin-right: 15px;
 }
 
+.slider-container {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .slick-arrow {
   top: 50%;
   height: 26px;

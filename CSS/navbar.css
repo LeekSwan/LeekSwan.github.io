@@ -1,51 +1,53 @@
-.nav-container {
-  position: relative;  
-  margin-right: 10%;
-  float: right;
-  margin: 0 auto;
+@media only screen and (min-width: 1060px) {
+  .nav-container {
+    position: relative;  
+    margin-right: 10%;
+    float: right;
+    margin: 0 auto;
+  } 
+
+  nav {
+    float: right;
+  }
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    float: left;
+    position: relative;
+  }
+  nav ul li a,
+  nav ul li a:visited {
+    display: block;
+    padding: 0 40px;
+    line-height: 70px;
+    color: #E7E7E7;
+    text-decoration: none;
+  }
+  nav ul li a:hover,
+  nav ul li a:visited:hover {
+    color: #FC6230;
+    transition: 0.3s;
+  }
+  nav ul li a:not(:only-child):after,
+  nav ul li a:visited:not(:only-child):after {
+    padding-left: 4px;
+    content: " ▾";
+  }
+  nav ul li ul li {
+    min-width: 190px;
+  }
+  nav ul li ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
 }
 
-nav {
-  float: right;
-}
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav ul li {
-  float: left;
-  position: relative;
-}
-nav ul li a,
-nav ul li a:visited {
-  display: block;
-  padding: 0 40px;
-  line-height: 70px;
-  color: #E7E7E7;
-  text-decoration: none;
-}
-nav ul li a:hover,
-nav ul li a:visited:hover {
-  /* background: #2581dc; */
-  color: #FC6230;
-  transition: 0.3s;
-}
-nav ul li a:not(:only-child):after,
-nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: " ▾";
-}
-nav ul li ul li {
-  min-width: 190px;
-}
-nav ul li ul li a {
-  padding: 15px;
-  line-height: 20px;
-}
 
 .nav-dropdown {
-  position: relative;
+  position: absolute;
   display: none;
   z-index: 1;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
@@ -55,6 +57,7 @@ nav ul li ul li a {
 .nav-mobile {
   display: none;
   position: absolute;
+  z-index: 1;
   top: 0;
   right: 0;
   height: 70px;
@@ -64,40 +67,38 @@ nav ul li ul li a {
 @media only screen and (max-width: 1060px) {
   .nav-mobile {
     display: block;
-    
+  }
+  .nav-container {
+    position: relative;  
+  }
+  .nav-list {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
   }
 
   nav {
     width: 100%;
     padding: 70px 0 15px;
-    
-  
   }
   nav ul {
     display: none;
     background-color: #9F9F9F;
-  
   }
   nav ul li {
     float: none;
     background-color: #9F9F9F;
-    
   }
   nav ul li a {
     padding: 15px;
     line-height: 20px;
-    
-    
   }
   nav ul li ul li a {
     padding-left: 30px;
-    
   }
 
-  .nav-dropdown {
-    position: static;
-    
-  }
+
 }
 
 #nav-toggle {

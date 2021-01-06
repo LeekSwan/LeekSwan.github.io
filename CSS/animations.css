@@ -4,78 +4,7 @@
  * See http://animista.net/license for more info. 
  * w: http://animista.net, t: @cssanimista
  * ---------------------------------------------- */
-
- .shadow-drop-2-br:hover {
-	-webkit-animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: shadow-drop-2-br 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
- @-webkit-keyframes shadow-drop-2-br {
-    0% {
-      -webkit-transform: translateZ(0) translateX(0) translateY(0);
-              transform: translateZ(0) translateX(0) translateY(0);
-      -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-              box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-    100% {
-      -webkit-transform: translateZ(25px) translateX(-12px) translateY(-12px);
-              transform: translateZ(25px) translateX(-12px) translateY(-12px);
-      -webkit-box-shadow: 12px 12px 20px -12px #3D9EC8;
-              box-shadow: 12px 12px 20px -12px #3D9EC8;
-    }
-  }
-  @keyframes shadow-drop-2-br {
-    0% {
-      -webkit-transform: translateZ(0) translateX(0) translateY(0);
-              transform: translateZ(0) translateX(0) translateY(0);
-      -webkit-box-shadow: 0 0 0 0 #FC6230;
-              box-shadow: 0 0 0 0 #FC6230;
-    }
-    100% {
-      -webkit-transform: translateZ(25px) translateX(-12px) translateY(-12px);
-              transform: translateZ(25px) translateX(-12px) translateY(-12px);
-      -webkit-box-shadow: 12px 12px 20px -12px #FC6230;
-              box-shadow: 12px 12px 20px -12px #FC6230;
-    }
-  }
-  
-
-
-.shadow-drop-2-top:hover  {
-  -webkit-animation: shadow-drop-2-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-          animation: shadow-drop-2-top 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-
-@-webkit-keyframes shadow-drop-2-top {
-  0% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    -webkit-box-shadow: 0 0 0 0 #FC6230;
-            box-shadow: 0 0 0 0 #FC6230;
-  }
-  100% {
-    -webkit-transform: translateZ(50px) translateY(12px);
-            transform: translateZ(50px) translateY(12px);
-    -webkit-box-shadow: 0 -12px 20px -12px #FC6230;
-            box-shadow: 0 -12px 20px -12px #FC6230;
-  }
-}
-@keyframes shadow-drop-2-top {
-  0% {
-    -webkit-transform: translateZ(0) translateY(0);
-            transform: translateZ(0) translateY(0);
-    -webkit-box-shadow: 0 0 0 0 #FC6230;
-            box-shadow: 0 0 0 0 #FC6230;
-  }
-  100% {
-    -webkit-transform: translateZ(50px) translateY(12px);
-            transform: translateZ(50px) translateY(12px);
-    -webkit-box-shadow: 0 -12px 20px -12px #FC6230;
-            box-shadow: 0 -12px 20px -12px #FC6230;
-  }
-}
-
+ 
 .text-shadow-drop-center:hover {
 	-webkit-animation: text-shadow-drop-center 0.6s both;
 	        animation: text-shadow-drop-center 0.6s both;
@@ -86,7 +15,7 @@
         text-shadow: 0 0 0 #FC6230;
 }
 100% {
-        text-shadow: 0 0 18px #FC6230;
+        text-shadow: 0 0 50px #FC6230;
 }
 }
 @keyframes text-shadow-drop-center {
@@ -94,7 +23,7 @@
         text-shadow: 0 0 0 #FC6230;
 }
 100% {
-        text-shadow: 0 0 18px #FC6230;
+        text-shadow: 0 0 50px #FC6230;
 }
 }
       

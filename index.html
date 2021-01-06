@@ -10,16 +10,17 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> 
 
+    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto Slab' rel='stylesheet'>
-
+    
     <link rel="stylesheet" href="CSS/index.css"/>
     <link rel="stylesheet" href="CSS/navbar.css"/>
     <link rel="stylesheet" href="CSS/slider.css"/>
     <link rel="stylesheet" href="CSS/animations.css"/>
+    <link rel="stylesheet" href="CSS/responsive.css"/>
 
     <title>Lixuan Xia Portfolio</title>
     <meta name="description" content="Lixuan Xia is a full stack software developer passionate of all things software. 
@@ -29,21 +30,20 @@
 
 
 <body>
-  <!-- <nav class="navbar navbar-expand-md sticky-top">
-      <div class="container">
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <div class="collapse navbar-collapse" id="narbarResponsive">
-              <ul class="navbar-nav nav-list ml-auto">
-                  <li><a href="#About" class="nav-link">About Me</a></li>
-                  <li><a href="#Experience" class="nav-link">Experience</a></li>
-                  <li><a href="#Projects" class="nav-link">Projects</a></li>
-                  <li><a href="#contact" class="nav-link">Contact Me!</a></li>
-        
-                  <li><a href="Assets/Lixuan_Xia_Resume_Tech.pdf" download="Lixuan_Xia_Resume" class="nav-link" style="color:#FC6230;">Resume</a></li>
-              </ul>
-          </div>
-      </div>
-  </nav> -->
+ 
+    <div class="nav-container">
+        <nav>
+            <div class="nav-mobile" ><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li><a href="#About" class="">About Me</a></li>
+                    <li><a href="#Experience" class="">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me!</a></li>
+                    <li><a href="Assets/Lixuan_Xia_Resume_Tech.pdf" download="Lixuan_Xia_Resume" style="color:#FC6230;">Resume</a></li>
+                </ul>
+        </nav>
+    </div>
+    
 
 
   <div class="container-fluid header-container">
@@ -56,7 +56,7 @@
 
   <div class="container-fluid about-container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 10%; text-align: center;">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> About me </h>
       </div>
       <div class="row">
@@ -120,7 +120,7 @@
     </div>
   </div>
      
-  <div class="container-fluid">
+  <div class="container-fluid project-container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> Projects</h>
@@ -134,7 +134,7 @@
 
   </div>      
 
-  <div class="container-fluid">
+  <div class="container-fluid experience-container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> Experience </h>
@@ -165,8 +165,8 @@
         <h6 class = "designed">Designed and built by Lixuan Xia</h6>
   </div>
 
-  <a class="back2Top" id="back2Top"  href="#">
-      <i class="fa fa-2x fa-angle-double-up" aria-hidden="true"></i>
+  <a class="back2Top text-shadow-drop-center" id="back2Top"  href="#">
+      <i class="fa fa-2x fa-angle-double-up " aria-hidden="true"></i>
   </a>
   
  
@@ -180,6 +180,7 @@
   <script src="JS/experienceSlider.js" type="module"></script>
   <script src="JS/links.js" type="module"></script>
   <script src="JS/scrollToTop.js" type="module"></script>
+  <script src="JS/navDropDown.js" type="module"></script>
   <script src="Assets/projectData.js"></script>
   <script src="Assets/experienceData.js"></script>
 
