@@ -35,12 +35,12 @@
         <nav>
             <div class="nav-mobile" ><a id="nav-toggle" href="#!"><span></span></a></div>
                 <ul class="nav-list">
-                    <li><a href="#About" class="">About Me</a></li>
-                    <li><a href="#Experience" class="">Experience</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#contact">Contact Me!</a></li>
-                    <li><a href="Assets/Lixuan_Xia_Resume_Tech.pdf" download="Lixuan_Xia_Resume" style="color:#FC6230;">Resume</a></li>
-                </ul>
+                    <li><a class="smooth-scroll" href="#About">About Me</a></li>
+                    <li><a class="smooth-scroll" href="#Projects">Projects</a></li>
+                    <li><a class="smooth-scroll" href="#Experience">Experience</a></li>
+                    <li><a class="smooth-scroll" href="#Contact">Contact Me!</a></li>
+                    <li><a href="Assets/Lixuan_Xia_Resume_Tech.pdf" target="_blank" style="color:#FC6230;">Resume</a></li>
+                  </ul>
         </nav>
     </div>
     
@@ -54,7 +54,7 @@
   </div>
 
 
-  <div class="container-fluid about-container">
+  <div class="container-fluid about-container" id="About">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> About me </h>
@@ -64,13 +64,14 @@
           <img class = "profile-pic" alt="Lixuan Xia Software Engineer" src = "Assets/square-centered.jpg">
         </div>
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-          <p class="paragraphs">I'm a recent graduate from UNC Chapel Hill with a Bachelors in Physics and Astronomy, along with
+          <!-- <p class="paragraphs">I'm a recent graduate from UNC Chapel Hill with a Bachelors in Physics and Astronomy, along with
             minors in Business and Computer Science.
+          </p> -->
+          <p class="paragraphs">I'm a full stack developer based in Raleigh NC who recently graduated from UNC Chapel Hill. 
+            My primary tools are Python and Javascript but picking up new frameworks or languages isn't a problem. With extensive experience in 
+            developing both frontend and backend, I can bring any project to life. 
+            I'm naturally curious and driven to always be better than the day before.
           </p>
-          <p class="paragraphs">I enjoy working on all sorts of projects from websites to applications and everything in between.
-            My goal is to explore every tech stack under the sun and one day become a full stack developer.
-          </p>
-
           <p class="paragraphs">
               Listed bellow are a few technologies i've been working with recently:
           </p>
@@ -113,14 +114,12 @@
               </ul>
             </div>
           </div>
-
-          
         </div>
       </div>
     </div>
   </div>
      
-  <div class="container-fluid project-container">
+  <div class="container-fluid project-container" id="Projects">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> Projects</h>
@@ -134,7 +133,7 @@
 
   </div>      
 
-  <div class="container-fluid experience-container">
+  <div class="container-fluid experience-container" id="Experience">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-top: 5%; padding-bottom: 5%; text-align: center;">
         <h class = "heading-font"> Experience </h>
@@ -148,7 +147,7 @@
 
   </div>
 
-  <div class = "footer-container" id="contact" style="text-align: center;"> 
+  <div class = "footer-container" id="Contact" style="text-align: center;"> 
     <h class = "heading-font">Get in touch!</h>
 
     <div class="flex-center" style="margin-top: 3%;">
@@ -181,6 +180,7 @@
   <script src="JS/links.js" type="module"></script>
   <script src="JS/scrollToTop.js" type="module"></script>
   <script src="JS/navDropDown.js" type="module"></script>
+  <script src="JS/smoothScroll.js" type="module"></script>
   <script src="Assets/projectData.js"></script>
   <script src="Assets/experienceData.js"></script>
 
