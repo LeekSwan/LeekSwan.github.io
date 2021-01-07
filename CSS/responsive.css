@@ -39,10 +39,7 @@
     margin-top: 25px;
   }
   .nav-tabs > li {
-    font-size: 12px;
-  }
- .card-font {
-   font-size: 12px;
+    font-size: 11px;
   }
  .slick-prev {
     left: -25px;
@@ -52,6 +49,18 @@
   }
   .fa-4x {
     font-size: 40px;
+  }
+  .card-heading {
+    font-size: 15px;
+  }
+  .card-font {
+    font-size: 12px;
+  }
+  .heading-font {
+    font-size: 25px;
+  }
+  .paragraphs {
+    font-size: 13px;
   }
 }
 
