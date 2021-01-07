@@ -1,10 +1,8 @@
 @media screen and (max-width: 1000px) {
-
   .profile-pic {
     border-radius: 50%;
     width:200px;
     height:200px;
-
     margin: auto;
   }
 }
@@ -12,80 +10,52 @@
 
 /* adjusts font size for smaller screens */
 @media screen and (max-width: 850px) {
-  .wrapper {
-    height: 3500px;
-  }
-  .title {
-    font-size: 40px;
-    color: #E7E7E7;
-  }
 
-  .subtitle {
-    font-size: 25px;
-    line-height: 40px;
-    color: #9F9F9F;
-  }
-
-  .heading-font {
-    font-size: 22px;
-    color: #E7E7E7;
-  }
-
-  .paragraphs {
-    font-size: 15px;
-    color: #9F9F9F;
-  }
-
-  .tab-font {
-    font-size:15px;
-    color:rgb(110, 97, 97)
-  }
 
 }
 @media screen and (max-width: 770px) {
-
-  .wrapper {
-    height: 3700px;
-  }
 
 }
 
 @media screen and (max-width: 625px) {
 
 
-  .section-head {
-    margin:auto;
-    position: absolute;
-
-    transform: translateY(-50%);
-    margin-top: 15%;
-    top: 50%;
-
-
-    width: 80%;
-    height: 90%;
-  }
-
 }
 
 @media screen and (max-width: 570px) {
-  .wrapper {
-    height: 5000px;
-  }
-  
+ 
 
 }
 
 @media only screen and (max-width: 400px) {
-  .wrapper {
-    height: 5000px;
+  .profile-pic {
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
   }
-
+  .nav-tabs > li {
+    font-size: 12px;
+  }
+ .card-font {
+   font-size: 12px;
+  }
+ .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+  .fa-4x {
+    font-size: 40px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
-  .wrapper {
-    height: 4500px;
-  }
+  
 
 }

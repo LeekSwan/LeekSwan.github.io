@@ -3,7 +3,7 @@ export const renderCard = function(experience) {
       <div class="card bg-transparent">
         <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
           <div class="card-body card-color">
-            <h4 class="card-title paragraphs">${experience.title}</h4>
+            <h4 class="card-title heading-font">${experience.title}</h4>
             <p class="card-text card-font">${experience.company}</p>
             <p class="card-text"><small class="text-muted">${experience.date}</small></p>
             <p class="card-text card-font">${experience.description}</p>

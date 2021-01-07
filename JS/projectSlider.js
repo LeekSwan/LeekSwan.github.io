@@ -2,9 +2,9 @@ export const renderCard = function(project) {
   return `
 
           <div class="card bg-transparent">
-            <img class="card-img-top" src="${project.image}" alt="Card image cap" style="width: 100%;">
+            <img class="card-img-top" src="${project.image}" alt="Card image cap"">
               <div class="card-body card-color">
-                  <h5 class="card-title paragraphs">${project.title}</h5>
+                  <h5 class="card-title card-heading">${project.title}</h5>
                   <p class="card-text card-font">${project.description}</p>
                   <p class="card-text" style = "color:#9F9F9F; font-size:12px;">${project.tech}</p>
                   <a href="${project.link}" target="proj${project.id}" class="proj${project.id} btn btn-outline-light">Github</a>
