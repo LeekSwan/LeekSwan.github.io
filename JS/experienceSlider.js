@@ -1,7 +1,6 @@
 export const renderCard = function(experience) {
   return `
       <div class="card bg-transparent">
-        <img class="card-img-top img-fluid" src="http://placehold.it/800x600/f44242/fff" alt="Card image cap">
           <div class="card-body card-color">
             <h4 class="card-title card-heading">${experience.title}</h4>
             <p class="card-text card-font">${experience.company}</p>
@@ -21,7 +20,6 @@ export const loadExperiencesIntoDOM = function(experience) {
 
   //Append to element
   $("#experience-slider").append(cards)
-
 };
 
 
@@ -30,7 +28,6 @@ export const loadExperiencesIntoDOM = function(experience) {
 * Use jQuery to execute the function after the page loads
 */
 $(function() {
-  
   loadExperiencesIntoDOM(experienceData);
 // Slider settings 
 $('.experience-card-slider').slick({

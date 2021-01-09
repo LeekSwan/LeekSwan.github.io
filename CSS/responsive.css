@@ -7,24 +7,21 @@
   }
 }
 
-
 /* adjusts font size for smaller screens */
 @media screen and (max-width: 850px) {
 
-
 }
+
 @media screen and (max-width: 770px) {
 
 }
 
 @media screen and (max-width: 625px) {
 
-
 }
 
 @media screen and (max-width: 570px) {
  
-
 }
 
 @media only screen and (max-width: 400px) {
@@ -62,9 +59,62 @@
   .paragraphs {
     font-size: 13px;
   }
+  .about-container {
+    margin-bottom: 300px;
+  }
+  .project-container {
+    margin-bottom: 300px;
+  }
+  .experience-container {
+    margin-bottom: 200px;
+  }
 }
 
 @media only screen and (max-width: 300px) {
-  
-
+  .profile-pic {
+    border-radius: 50%;
+    width:150px;
+    height:150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+  .nav-tabs > li {
+    font-size: 11px;
+  }
+ .slick-prev {
+    left: -25px;
+  }
+  .slick-next {
+    right: -25px;
+  }
+  .fa-4x {
+    font-size: 40px;
+  }
+  .card-heading {
+    font-size: 15px;
+  }
+  .card-font {
+    font-size: 12px;
+  }
+  .heading-font {
+    font-size: 25px;
+  }
+  .paragraphs {
+    font-size: 13px;
+  }
+  .about-container {
+    margin-bottom: 100px;
+  }
+  .about-container {
+    margin-bottom: 300px;
+  }
+  .project-container {
+    margin-bottom: 300px;
+  }
+  .experience-container {
+    margin-bottom: 200px;
+  }
 }

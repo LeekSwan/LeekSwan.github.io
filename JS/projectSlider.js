@@ -1,6 +1,5 @@
 export const renderCard = function(project) {
   return `
-
           <div class="card bg-transparent">
             <img class="card-img-top" src="${project.image}" alt="Card image cap"">
               <div class="card-body card-color">
@@ -10,7 +9,6 @@ export const renderCard = function(project) {
                   <a href="${project.link}" target="proj${project.id}" class="proj${project.id} btn btn-outline-light">Github</a>
               </div>
           </div>
-
          `
 };
 
@@ -21,12 +19,9 @@ export const loadProjectsIntoDOM = function(project) {
   for (let i = 0; i < project.length; i++) {
   cards.append(renderCard(project[i]));
   }
-
   // cards.wrapAll("<div class='slider-container' id='project-card-slider' />")
-
   //Append to element
   $("#project-slider").append(cards)
-  
 };
 
 

@@ -1,6 +1,3 @@
 # LeekSwanV2
 
-TODO:
-- Go over color themes
-- Add pictures to experience cards
-- Clean up dead code
+Hello! This is my web portfolio repository. Please feel free to reach out!
